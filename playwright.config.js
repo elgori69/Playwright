@@ -6,13 +6,15 @@ const config = {
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
-    timeout: 5000
+    timeout: 7000
   },
   
   reporter: 'html',
   use: {
     browserName : 'chromium',
-    headless : false
+    headless : false,
+    screenshot:'on',
+    trace: 'retain-on-failure'
   }
 }
 module.exports = config;
